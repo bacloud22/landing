@@ -2,10 +2,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import ThemeToggler from "./ThemeToggler";
+// import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
+import { useTheme } from "next-themes";
+
 
 const Header = () => {
+  const { theme, setTheme } = useTheme();
+  setTheme(theme === "dark" ? "light" : "light");
   // Navbar toggle
   const [navbarOpen, setNavbarOpen] = useState(false);
   const navbarToggleHandler = () => {
@@ -149,11 +153,11 @@ const Header = () => {
                   </ul>
                 </nav>
               </div>
-              <div className="flex items-center justify-end pr-16 lg:pr-0">
+              {/* <div className="flex items-center justify-end pr-16 lg:pr-0">
                 <div>
                   <ThemeToggler />
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

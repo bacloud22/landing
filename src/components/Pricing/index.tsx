@@ -11,8 +11,8 @@ const Pricing = () => {
     <section id="pricing" className="relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
-          title="Simple and Affordable Pricing"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          title="Three simple plans"
+          paragraph="Our lite version is also commercialized through Codecanyon marketplace. Pro and Ultimate versions have multiple languages, sections and maps included."
           center
           width="665px"
         />
