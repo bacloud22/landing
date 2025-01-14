@@ -12,10 +12,10 @@ const Hero = () => {
             <div className="w-full px-4">
               <div className="mx-auto max-w-[800px] text-center">
                 <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                  The ultimate listings website solution
+                  The ultimate <span className="purple">listings website</span> solution
                 </h1>
                 <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                  Open-Listings is a modern, fast, and privacy-respecting web application designed for creating dynamic and interactive listing websites. 
+                  <span className="purple">Open-Listings</span> is a modern, fast, and privacy-respecting web application designed for creating dynamic and interactive listing websites. 
                   With rich input forms, an interactive UI, multilingual support, and advanced geolocation capabilities;
                   It’s ideal for users who want to create listings in various languages and target regions.
                 </p>
@@ -27,7 +27,7 @@ const Hero = () => {
                     🔥 Get Pro
                   </Link>
                   <Link
-                    href="https://github.com/NextJSTemplates/startup-nextjs"
+                    href="https://github.com/bacloud22/TODO:"
                     className="inline-block rounded-sm bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
                   >
                     Star on GitHub

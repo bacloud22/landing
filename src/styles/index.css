@@ -8,6 +8,10 @@
   body {
     font-family: "Inter", sans-serif;
   }
+
+  .purple {
+    color: #ff00ff;
+  }
 }
 
 @layer components {
@@ -31,3 +35,4 @@
     @apply opacity-100;
   }
 }
+

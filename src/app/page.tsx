@@ -10,6 +10,7 @@ import Pricing from "@/components/Pricing";
 import Testimonials from "@/components/Testimonials";
 import Video from "@/components/Video";
 import { Metadata } from "next";
+import { useTheme } from "next-themes";
 
 export const metadata: Metadata = {
   title: "The modern listings website (Open-listings.com)",
@@ -18,6 +19,8 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
+  const { theme, setTheme } = useTheme();
+  setTheme(theme === "dark" ? "light" : "light");
   return (
     <>
       <ScrollUp />
