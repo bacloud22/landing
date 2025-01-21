@@ -12,6 +12,7 @@ const nextConfig = {
     ],
   },
   output: "export",
+  assetPrefix: '/landing/',
   basePath: '/landing',
 };
 
