@@ -62,7 +62,7 @@ const Pricing = () => {
             packageName="Lite"
             price={isMonthly ? "40" : "120"}
             duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            subtitle="Get our lite version instantly on Codecanyon."
           >
             <OfferList text="All UI Components" status="active" />
             <OfferList text="Use with Unlimited Projects" status="active" />
@@ -72,10 +72,10 @@ const Pricing = () => {
             <OfferList text="Free Lifetime Updates" status="inactive" />
           </PricingBox>
           <PricingBox
-            packageName="Basic"
+            packageName="Pro"
             price={isMonthly ? "399" : "789"}
             duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            subtitle="Pro version has maps fully integrated. It can be bought from Codecanyon."
           >
             <OfferList text="All UI Components" status="active" />
             <OfferList text="Use with Unlimited Projects" status="active" />
@@ -85,10 +85,10 @@ const Pricing = () => {
             <OfferList text="Free Lifetime Updates" status="inactive" />
           </PricingBox>
           <PricingBox
-            packageName="Plus"
+            packageName="Ultimate"
             price={isMonthly ? "589" : "999"}
             duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            subtitle="Ultimate version can be customized to integrate additionnal languages and listing sections."
           >
             <OfferList text="All UI Components" status="active" />
             <OfferList text="Use with Unlimited Projects" status="active" />

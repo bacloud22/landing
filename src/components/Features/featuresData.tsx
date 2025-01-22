@@ -89,7 +89,7 @@ const featuresData: Feature[] = [
     ),
     title: "Open-Source version",
     paragraph:
-      "We propose a bare minimal version for free accessible through Github. It is constantly improving and updating, you can build from it but it is not really market ready as It is features free",
+      "We propose a bare minimal version for free accessible through Github. It is constantly improving and updating, you can build from it but it is not really market ready as It is free from features",
   },
 ];
 export default featuresData;
