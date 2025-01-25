@@ -14,7 +14,7 @@ const featuresData: Feature[] = [
     ),
     title: "Lightning Fast",
     paragraph:
-      "You can run the solution on a low spec server with no issues. Technically the website can scale to millions of listings, users or actions on a dedicated server.",
+      "You can run the solution on a low spec server fluently. Technically It can scale to millions of listings, users or actions on a dedicated server.",
   },
   {
     id: 1,
@@ -29,7 +29,7 @@ const featuresData: Feature[] = [
     ),
     title: "Up to date technology",
     paragraph:
-      "All building blocks and other dependencies are modern and stable. Which yields to best performance and security.",
+      "All building blocks and other dependencies are up-to-date and stable. Which leads to the best performance and security.",
   },
   {
     id: 1,
@@ -44,7 +44,7 @@ const featuresData: Feature[] = [
     ),
     title: "Maps integration",
     paragraph:
-      "Maps bring the best of a listings website; Either on homepage or in listings pages, different maps are used for the geolocation you choose.",
+      "Maps are a key component of Open-listings; On both the homepage and listings pages, different maps are utilized to pinpoint geolocation of listings.",
   },
   {
     id: 1,
@@ -59,7 +59,7 @@ const featuresData: Feature[] = [
     ),
     title: "Multi-lingual",
     paragraph:
-      "Not only interface is presented under different languages, listings are classified by languages which are detected from text using internal A.I.",
+      "Not only is the interface presented in different languages, but listings are classified by languages detected from text using internal AI.",
   },
   {
     id: 1,
