@@ -9,7 +9,7 @@ const Features = () => {
         <div className="container">
           <SectionTitle
             title="Main Features"
-            paragraph="Open-listings is minimal and performant; It is a modern version of Cregslist like classifieds."
+            paragraph="Open-listings is minimal and performant; Think of It as a modern version of Cregslist."
             center
           />
 

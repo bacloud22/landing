@@ -5,7 +5,11 @@ import OfferList from "./OfferList";
 import PricingBox from "./PricingBox";
 
 const Pricing = () => {
-  const [isMonthly, setIsMonthly] = useState(true);
+  const [isMonthlySplit, setIsMonthlySplit] = useState(true);
+  const basic = 150;
+  const pro = 500;
+  const ultimate = 2000;
+  const split = (n: number) => Math.ceil(n / 12);
 
   return (
     <section id="pricing" className="bg-white relative z-10 py-16 md:py-20 lg:py-28">
@@ -20,39 +24,36 @@ const Pricing = () => {
         <div className="w-full">
           <div className="mb-8 flex justify-center md:mb-12 lg:mb-16">
             <span
-              onClick={() => setIsMonthly(true)}
-              className={`${
-                isMonthly
+              onClick={() => setIsMonthlySplit(true)}
+              className={`${isMonthlySplit
                   ? "pointer-events-none text-primary"
                   : "text-dark dark:text-white"
-              } mr-4 cursor-pointer text-base font-semibold`}
+                } mr-4 cursor-pointer text-base font-semibold`}
             >
-              Monthly
+              Monthly plit payment
             </span>
             <div
-              onClick={() => setIsMonthly(!isMonthly)}
+              onClick={() => setIsMonthlySplit(!isMonthlySplit)}
               className="flex cursor-pointer items-center"
             >
               <div className="relative">
                 <div className="h-5 w-14 rounded-full bg-[#1D2144] shadow-inner"></div>
                 <div
-                  className={`${
-                    isMonthly ? "" : "translate-x-full"
-                  } shadow-switch-1 absolute left-0 top-[-4px] flex h-7 w-7 items-center justify-center rounded-full bg-primary transition`}
+                  className={`${isMonthlySplit ? "" : "translate-x-full"
+                    } shadow-switch-1 absolute left-0 top-[-4px] flex h-7 w-7 items-center justify-center rounded-full bg-primary transition`}
                 >
                   <span className="active h-4 w-4 rounded-full bg-white"></span>
                 </div>
               </div>
             </div>
             <span
-              onClick={() => setIsMonthly(false)}
-              className={`${
-                isMonthly
+              onClick={() => setIsMonthlySplit(false)}
+              className={`${isMonthlySplit
                   ? "text-dark dark:text-white"
                   : "pointer-events-none text-primary"
-              } ml-4 cursor-pointer text-base font-semibold`}
+                } ml-4 cursor-pointer text-base font-semibold`}
             >
-              Yearly
+              One time payment
             </span>
           </div>
         </div>
@@ -60,42 +61,42 @@ const Pricing = () => {
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
           <PricingBox
             packageName="Lite"
-            price={isMonthly ? "40" : "120"}
-            duration={isMonthly ? "mo" : "yr"}
+            price={isMonthlySplit ? basic : basic}
+            duration={isMonthlySplit ? "/one time" : ""}
             subtitle="Get our lite version instantly on Codecanyon."
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="inactive" />
-            <OfferList text="Free Lifetime Updates" status="inactive" />
+            <OfferList text="A fully functional listings website" status="active" />
+            <OfferList text="Admin dashboard for approving listings" status="active" />
+            <OfferList text="Email integration for admin and users" status="active" />
+            <OfferList text="One section (marketplace)" status="active" />
+            <OfferList text="Ticket support" status="active" />
+            <OfferList text="Email support" status="inactive" />
+            <OfferList text="1:1 live support" status="inactive" />
           </PricingBox>
           <PricingBox
             packageName="Pro"
-            price={isMonthly ? "399" : "789"}
-            duration={isMonthly ? "mo" : "yr"}
+            price={isMonthlySplit ? split(pro) : pro}
+            duration={isMonthlySplit ? "/mo (*12)" : ""}
             subtitle="Pro version has maps fully integrated. It can be bought from Codecanyon."
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="active" />
-            <OfferList text="Free Lifetime Updates" status="inactive" />
+            <OfferList text="Delimitations and listings maps on homepage" status="active" />
+            <OfferList text="Admin dashboard for approving listings" status="active" />
+            <OfferList text="Admin dashboard for monitoring" status="active" />
+            <OfferList text="Multiple sections are supported (marketplace, meetings etc)" status="active" />
+            <OfferList text="Ticket support" status="active" />
+            <OfferList text="Email support" status="inactive" />
+            <OfferList text="1:1 live support" status="inactive" />
           </PricingBox>
           <PricingBox
             packageName="Ultimate"
-            price={isMonthly ? "589" : "999"}
-            duration={isMonthly ? "mo" : "yr"}
+            price={isMonthlySplit ? split(ultimate) : ultimate}
+            duration={isMonthlySplit ? "/mo (*12)" : ""}
             subtitle="Ultimate version can be customized to integrate additionnal languages and listing sections."
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="active" />
-            <OfferList text="Free Lifetime Updates" status="active" />
+            <OfferList text="Everything** is active" status="active" />
+            <OfferList text="Ticket support" status="active" />
+            <OfferList text="Email support" status="active" />
+            <OfferList text="1:1 live support" status="active" />
           </PricingBox>
         </div>
       </div>

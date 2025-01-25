@@ -7,6 +7,20 @@ import { useEffect, useState } from "react";
 import menuData from "./menuData";
 
 const Header = () => {
+
+  useEffect(() => {
+    const script = document.createElement('script');
+
+    script.src = "https://desk.zoho.eu/portal/api/feedbackwidget/193700000000261420?orgId=20103968157&displayType=embeded";
+    script.async = true;
+
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    }
+  }, []);
+
   // Navbar toggle
   const [navbarOpen, setNavbarOpen] = useState(false);
   const navbarToggleHandler = () => {
@@ -41,23 +55,21 @@ const Header = () => {
   return (
     <>
       <header
-        className={`header left-0 top-0 z-40 flex w-full items-center ${
-          sticky
+        className={`header left-0 top-0 z-40 flex w-full items-center ${sticky
             ? "dark:bg-gray-dark dark:shadow-sticky-dark fixed z-[9999] bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm transition"
             : "absolute bg-transparent"
-        }`}
+          }`}
       >
         <div className="container">
           <div className="relative -mx-4 flex items-center justify-between">
             <div className="w-60 max-w-full px-4 xl:mr-12">
               <Link
                 href="/"
-                className={`header-logo block w-full ${
-                  sticky ? "py-5 lg:py-2" : "py-8"
-                } `}
+                className={`header-logo block w-full ${sticky ? "py-5 lg:py-2" : "py-8"
+                  } `}
               >
                 <Image
-                  src="/landing/images/logo/logo-2.svg"
+                  src="/landing/images/logo/logo.svg"
                   alt="logo"
                   width={140}
                   height={30}
