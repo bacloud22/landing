@@ -15,6 +15,7 @@ const Video = () => {
         <SectionTitle
           title="We are ready to help"
           paragraph="Whenever you encounter a running problem with Open-Listings, You can instantly raise an issue through our support platform Zendesk."
+          paragraph2="Watch our installation demo now"
           center
           mb="80px"
         />
@@ -50,11 +51,11 @@ const Video = () => {
       </div>
 
       <ModalVideo
-        channel="youtube"
+        channel="vimeo"
         autoplay={true}
         start={true}
         isOpen={isOpen}
-        videoId="L61p2uyiMSo"
+        videoId="1050897042"
         onClose={() => setOpen(false)}
       />
 
