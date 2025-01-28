@@ -8,7 +8,7 @@ const SectionTitle = ({
 }: {
   title: string;
   paragraph: string;
-  paragraph2: string;
+  paragraph2?: string;
   width?: string;
   center?: boolean;
   mb?: string;

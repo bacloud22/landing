@@ -9,7 +9,7 @@ const Pricing = () => {
   const basic = 150;
   const pro = 500;
   const ultimate = 2000;
-  const split = (n: number) => Math.ceil(n / 12);
+  const split = (n: number) => Math.ceil(n / 10);
 
   return (
     <section id="pricing" className="bg-white relative z-10 py-16 md:py-20 lg:py-28">
@@ -62,7 +62,7 @@ const Pricing = () => {
           <PricingBox
             packageName="Lite"
             price={isMonthlySplit ? basic : basic}
-            duration={isMonthlySplit ? "/one time" : ""}
+            duration={isMonthlySplit ? "$/one time" : "$"}
             subtitle="Get our lite version instantly on Codecanyon."
           >
             <OfferList text="A fully functional listings website" status="active" />
@@ -76,7 +76,7 @@ const Pricing = () => {
           <PricingBox
             packageName="Pro"
             price={isMonthlySplit ? split(pro) : pro}
-            duration={isMonthlySplit ? "/mo (*12)" : ""}
+            duration={isMonthlySplit ? "$/mo (*10)" : "$"}
             subtitle="Pro version has maps fully integrated. It can be bought from Codecanyon."
           >
             <OfferList text="Delimitations and listings maps on homepage" status="active" />
@@ -90,7 +90,7 @@ const Pricing = () => {
           <PricingBox
             packageName="Ultimate"
             price={isMonthlySplit ? split(ultimate) : ultimate}
-            duration={isMonthlySplit ? "/mo (*12)" : ""}
+            duration={isMonthlySplit ? "$/mo (*10)" : "$"}
             subtitle="Ultimate version can be customized to integrate additionnal languages and listing sections."
           >
             <OfferList text="Everything** is active" status="active" />
