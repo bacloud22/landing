@@ -28,7 +28,7 @@ const BlogDetailsPage = () => {
                       <div className="mr-4">
                         <div className="relative h-10 w-10 overflow-hidden rounded-full">
                           <Image
-                            src="/landing/images/blog/author-02.png"
+                            src="/images/blog/author-02.png"
                             alt="author"
                             fill
                           />
@@ -111,7 +111,7 @@ const BlogDetailsPage = () => {
                   <div className="mb-10 w-full overflow-hidden rounded">
                     <div className="relative aspect-[97/60] w-full sm:aspect-[97/44]">
                       <Image
-                        src="/landing/images/blog/blog-details-02.jpg"
+                        src="/images/blog/blog-details-02.jpg"
                         alt="image"
                         fill
                         className="object-cover object-center"

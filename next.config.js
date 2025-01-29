@@ -12,8 +12,8 @@ const nextConfig = {
     ],
   },
   output: "export",
-  assetPrefix: '/landing/',
-  basePath: '/landing',
+  assetPrefix: '/',
+  basePath: '',
 };
 
 module.exports = nextConfig;

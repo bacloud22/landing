@@ -1,7 +1,7 @@
 {
   "name": "startup-nextjs-template",
   "version": "2.0.0",
-  "homepage": "https://bacloud22.github.io/landing",
+  "homepage": "https://open-listings.net",
   "private": true,
   "scripts": {
     "dev": "next dev",
