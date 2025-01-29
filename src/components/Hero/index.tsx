@@ -20,12 +20,17 @@ const Hero = () => {
                   It’s ideal for users who want to create listings in various languages and target regions.
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
-                  <Link
-                    href="https://nextjstemplates.com/templates/saas-starter-startup"
+                  <button
+                    onClick={() => {
+                      const element = document.getElementById('pricing');
+                      element?.scrollIntoView({
+                        behavior: 'smooth'
+                      }); 
+                    }}
                     className="rounded-sm bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
                   >
-                    🔥 Get Basic version
-                  </Link>
+                    🔥 Get a license
+                  </button>
                   <Link
                     href="https://github.com/bacloud22/TODO:"
                     className="inline-block rounded-sm bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"

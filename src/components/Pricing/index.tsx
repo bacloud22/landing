@@ -94,6 +94,7 @@ const Pricing = () => {
             subtitle="Ultimate version can be customized to integrate additionnal languages and listing sections."
           >
             <OfferList text="Everything** is active" status="active" />
+            <OfferList text="Plain source code" status="active" />
             <OfferList text="Ticket support" status="active" />
             <OfferList text="Email support" status="active" />
             <OfferList text="1:1 live support" status="active" />
