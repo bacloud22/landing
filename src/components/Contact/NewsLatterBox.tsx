@@ -10,11 +10,12 @@ const NewsLatterBox = () => {
   const [firstname, setFirstname] = useState("");
   const [email, setEmail] = useState("");
 
+ 
   const handleSubscribe = async () => {
     try {
       const url = "https://api.sender.net/v2/subscribers";
-      const apiKey = "YOUR_API_KEY"; // Replace with your API key
-
+      const apiKey = process.env.NEXT_PUBLIC_SENDER_API_TOKEN;
+      
       const data = {
         email: email,
         firstname: firstname,
