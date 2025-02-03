@@ -12,7 +12,10 @@ const Pricing = () => {
   const split = (n: number) => Math.ceil(n / 10);
 
   return (
-    <section id="pricing" className="bg-white relative z-10 py-16 md:py-20 lg:py-28">
+    <section
+      id="pricing"
+      className="relative z-10 bg-white py-16 md:py-20 lg:py-28"
+    >
       <div className="container">
         <SectionTitle
           title="Three simple plans"
@@ -25,10 +28,11 @@ const Pricing = () => {
           <div className="mb-8 flex justify-center md:mb-12 lg:mb-16">
             <span
               onClick={() => setIsMonthlySplit(true)}
-              className={`${isMonthlySplit
+              className={`${
+                isMonthlySplit
                   ? "pointer-events-none text-primary"
-                  : "text-dark dark:text-white"
-                } mr-4 cursor-pointer text-base font-semibold`}
+                  : "dark:text-white text-dark"
+              } mr-4 cursor-pointer text-base font-semibold`}
             >
               Monthly plit payment
             </span>
@@ -39,8 +43,9 @@ const Pricing = () => {
               <div className="relative">
                 <div className="h-5 w-14 rounded-full bg-[#1D2144] shadow-inner"></div>
                 <div
-                  className={`${isMonthlySplit ? "" : "translate-x-full"
-                    } shadow-switch-1 absolute left-0 top-[-4px] flex h-7 w-7 items-center justify-center rounded-full bg-primary transition`}
+                  className={`${
+                    isMonthlySplit ? "" : "translate-x-full"
+                  } shadow-switch-1 absolute left-0 top-[-4px] flex h-7 w-7 items-center justify-center rounded-full bg-primary transition`}
                 >
                   <span className="active h-4 w-4 rounded-full bg-white"></span>
                 </div>
@@ -48,10 +53,11 @@ const Pricing = () => {
             </div>
             <span
               onClick={() => setIsMonthlySplit(false)}
-              className={`${isMonthlySplit
-                  ? "text-dark dark:text-white"
+              className={`${
+                isMonthlySplit
+                  ? "dark:text-white text-dark"
                   : "pointer-events-none text-primary"
-                } ml-4 cursor-pointer text-base font-semibold`}
+              } ml-4 cursor-pointer text-base font-semibold`}
             >
               One time payment
             </span>
@@ -62,38 +68,51 @@ const Pricing = () => {
           <PricingBox
             packageName="Lite"
             price={isMonthlySplit ? basic : basic}
-            duration={isMonthlySplit ? "$/one time" : "$"}
+            duration={isMonthlySplit ? "/one time" : ""}
             subtitle="Get our lite version instantly on Codecanyon."
           >
-            <OfferList text="A fully functional listings website" status="active" />
-            <OfferList text="Admin dashboard for approving listings" status="active" />
-            <OfferList text="Email integration for admin and users" status="active" />
-            <OfferList text="One section (marketplace)" status="active" />
+            <OfferList
+              text="A fully functional listings website"
+              status="active"
+            />
+            <OfferList
+              text="Admin dashboard for approving listings"
+              status="active"
+            />
+            <OfferList
+              text="Multiple sections are supported (marketplace, meetings etc)"
+              status="active"
+            />
             <OfferList text="Ticket support" status="active" />
             <OfferList text="Email support" status="inactive" />
             <OfferList text="1:1 live support" status="inactive" />
           </PricingBox>
           <PricingBox
             packageName="Pro"
-            price={isMonthlySplit ? split(pro) : pro}
-            duration={isMonthlySplit ? "$/mo (*10)" : "$"}
-            subtitle="Pro version has maps fully integrated. It can be bought from Codecanyon."
+            price={isMonthlySplit ? split(pro) + 5 : pro}
+            duration={isMonthlySplit ? "/mo (*10)" : ""}
+            subtitle="Pro version has maps fully integrated. It can be bought from Codecanyon. (comming soon)."
           >
-            <OfferList text="Delimitations and listings maps on homepage" status="active" />
-            <OfferList text="Admin dashboard for approving listings" status="active" />
+            <OfferList
+              text="Delimitations and listings maps on homepage"
+              status="active"
+            />
+            <OfferList
+              text="Admin dashboard for approving listings"
+              status="active"
+            />
             <OfferList text="Admin dashboard for monitoring" status="active" />
-            <OfferList text="Multiple sections are supported (marketplace, meetings etc)" status="active" />
             <OfferList text="Ticket support" status="active" />
             <OfferList text="Email support" status="inactive" />
             <OfferList text="1:1 live support" status="inactive" />
           </PricingBox>
           <PricingBox
             packageName="Ultimate"
-            price={isMonthlySplit ? split(ultimate) : ultimate}
-            duration={isMonthlySplit ? "$/mo (*10)" : "$"}
-            subtitle="Ultimate version can be customized to integrate additionnal languages and listing sections."
+            price={isMonthlySplit ? split(ultimate) + 20 : ultimate}
+            duration={isMonthlySplit ? "/mo (*10)" : ""}
+            subtitle="Ultimate version can be customized to integrate additionnal languages and listing sections. (comming soon)."
           >
-            <OfferList text="Everything** is active" status="active" />
+            <OfferList text="Customization is discussed" status="active" />
             <OfferList text="Plain source code" status="active" />
             <OfferList text="Ticket support" status="active" />
             <OfferList text="Email support" status="active" />
