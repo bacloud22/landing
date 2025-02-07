@@ -5,7 +5,7 @@ import OfferList from "./OfferList";
 import PricingBox from "./PricingBox";
 
 const Pricing = () => {
-  const [isMonthlySplit, setIsMonthlySplit] = useState(true);
+  const [isMonthlySplit, setIsMonthlySplit] = useState(false);
   const basic = 150;
   const pro = 500;
   const ultimate = 2000;
@@ -23,7 +23,7 @@ const Pricing = () => {
 
         <div className="w-full">
           <div className="mb-8 flex justify-center md:mb-12 lg:mb-16">
-            <span
+            {/* <span
               onClick={() => setIsMonthlySplit(true)}
               className={`${
                 isMonthlySplit
@@ -47,7 +47,7 @@ const Pricing = () => {
                   <span className="active h-4 w-4 rounded-full bg-white"></span>
                 </div>
               </div>
-            </div>
+            </div> */}
             <span
               onClick={() => setIsMonthlySplit(false)}
               className={`${
@@ -107,7 +107,7 @@ const Pricing = () => {
             packageName="Ultimate"
             price={isMonthlySplit ? split(ultimate) + 20 : ultimate}
             duration={isMonthlySplit ? "/mo (*10)" : ""}
-            subtitle="Ultimate version can be customized to integrate additionnal languages and listing sections. (comming soon)."
+            subtitle="Ultimate version can be customized to integrate additional languages and listing sections."
           >
             <OfferList text="Customization is discussed" status="active" />
             <OfferList text="Plain source code" status="active" />

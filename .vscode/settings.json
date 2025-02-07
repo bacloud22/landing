@@ -5,5 +5,8 @@
   "editor.tabSize": 2,
   "i18n-ally.localesPaths": [
     "locals/en.json"
+  ],
+  "cSpell.words": [
+    "Codecanyon"
   ]
 }

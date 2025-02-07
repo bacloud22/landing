@@ -37,6 +37,12 @@ const Hero = () => {
                   >
                     Schedule a meeting
                   </Link>
+                  <Link
+                    href="https://open-listings-demo.click/"
+                    className="inline-block rounded-sm bg-blue-600 shadow-md hover:bg-blue-700 px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
+                  >
+                    Demo🔗
+                  </Link>
                 </div>
               </div>
             </div>

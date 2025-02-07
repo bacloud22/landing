@@ -87,9 +87,9 @@ const featuresData: Feature[] = [
         <path d="M18.9474 32.6316C18.9474 35.4705 19.8099 38.0969 21.2941 40.2796C21.7904 41.0094 21.3054 42.1053 20.4229 42.1053H4.21053C1.87368 42.1053 0 40.2316 0 37.8947V4.21053C0 1.89474 1.87368 0 4.21053 0H6.31579H16.8421H29.4737C31.7895 0 33.6842 1.87368 33.6842 4.21053V17.9544C33.6842 18.5032 33.1804 18.9474 32.6316 18.9474C25.0737 18.9474 18.9474 25.0737 18.9474 32.6316Z" />
       </svg>
     ),
-    title: "Open-Source version",
+    title: "Safe-text API",
     paragraph:
-      "We propose a bare minimal version for free accessible through Github. It is constantly improving and updating, you can build from it but it is not really market ready as It is free from features",
+      "We have integrated an advanced multi-lingual text filtering functionalities so that human moderation is minimal.",
   },
 ];
 export default featuresData;
