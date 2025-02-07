@@ -12,10 +12,7 @@ const Pricing = () => {
   const split = (n: number) => Math.ceil(n / 10);
 
   return (
-    <section
-      id="pricing"
-      className="relative z-10 bg-white py-16 md:py-20 lg:py-28"
-    >
+    <section id="pricing" className="bg-white relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
           title="Three simple plans"
@@ -68,7 +65,7 @@ const Pricing = () => {
           <PricingBox
             packageName="Lite"
             price={isMonthlySplit ? basic : basic}
-            duration={isMonthlySplit ? "$/one time" : "$"}
+            duration={isMonthlySplit ? "/one time" : ""}
             subtitle="Get our lite version instantly on Codecanyon."
           >
             <OfferList
@@ -90,7 +87,7 @@ const Pricing = () => {
           <PricingBox
             packageName="Pro"
             price={isMonthlySplit ? split(pro) + 5 : pro}
-            duration={isMonthlySplit ? "$/mo (*10)" : "$"}
+            duration={isMonthlySplit ? "/mo (*10)" : ""}
             subtitle="Pro version has maps fully integrated. It can be bought from Codecanyon. (comming soon)."
           >
             <OfferList
@@ -109,7 +106,7 @@ const Pricing = () => {
           <PricingBox
             packageName="Ultimate"
             price={isMonthlySplit ? split(ultimate) + 20 : ultimate}
-            duration={isMonthlySplit ? "$/mo (*10)" : "$"}
+            duration={isMonthlySplit ? "/mo (*10)" : ""}
             subtitle="Ultimate version can be customized to integrate additionnal languages and listing sections. (comming soon)."
           >
             <OfferList text="Customization is discussed" status="active" />
